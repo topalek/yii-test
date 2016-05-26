@@ -13,7 +13,6 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
 
-        'components' => [
             'mail' => [
                 'class'            => 'zyx\phpmailer\Mailer',
                 'viewPath'         => '@common/mail',
@@ -28,7 +27,6 @@ return [
                     'password'   => 'mYsmTpPassword',
                 ],
             ],
-        ],
         
         'user' => [
             'identityClass' => 'common\models\User',
