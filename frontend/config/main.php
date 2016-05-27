@@ -23,8 +23,8 @@ return [
                     'port'       => '465',
                     'smtpsecure' => 'ssl',
                     'smtpauth'   => true,
-                    'username'   => 'mysmtplogin@example.ru',
-                    'password'   => 'mYsmTpPassword',
+                    'username'   => '',
+                    'password'   => '',
                 ],
             ],
         
