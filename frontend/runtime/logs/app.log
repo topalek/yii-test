@@ -1,0 +1,756 @@
+2016-05-30 22:05:20 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii/vendor\bower/jquery/dist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(179): yii\web\AssetManager->publish('C:\\OpenServer\\d...', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', 1)
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 C:\OpenServer\domains\yii\frontend\views\layouts\bootstrap.php(2): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\modules\main\controllers\DefaultController))
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\r\n<div class=""...')
+#12 C:\OpenServer\domains\yii\frontend\modules\main\controllers\DefaultController.php(20): yii\base\Controller->render('index')
+#13 [internal function]: app\modules\main\controllers\DefaultController->actionIndex()
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/', Array)
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2016-05-30 22:05:19 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DX9USIdpbeUyt63J6qbNlywUbYIWZZhy\";}'
+    'PHPSESSID' => 'qi9qmn1tsl97qmh78if02pe816'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => '_csrf=102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DX9USIdpbeUyt63J6qbNlywUbYIWZZhy%22%3B%7D; PHPSESSID=qi9qmn1tsl97qmh78if02pe816'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52154'
+    'REDIRECT_URL' => '/main/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464635119.875
+    'REQUEST_TIME' => 1464635119
+    'argv' => []
+    'argc' => 0
+]
+2016-05-30 22:05:24 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii/vendor\bower/jquery/dist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(179): yii\web\AssetManager->publish('C:\\OpenServer\\d...', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 C:\OpenServer\domains\yii\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(frontend\controllers\SiteController))
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#12 C:\OpenServer\domains\yii\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2016-05-30 22:05:24 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DX9USIdpbeUyt63J6qbNlywUbYIWZZhy\";}'
+    'PHPSESSID' => 'qi9qmn1tsl97qmh78if02pe816'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => '_csrf=102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DX9USIdpbeUyt63J6qbNlywUbYIWZZhy%22%3B%7D; PHPSESSID=qi9qmn1tsl97qmh78if02pe816'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52165'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464635124.13
+    'REQUEST_TIME' => 1464635124
+    'argv' => []
+    'argc' => 0
+]
+2016-05-30 22:06:16 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "default".' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('default', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-30 22:06:16 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DX9USIdpbeUyt63J6qbNlywUbYIWZZhy\";}'
+    'PHPSESSID' => 'qi9qmn1tsl97qmh78if02pe816'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => '_csrf=102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DX9USIdpbeUyt63J6qbNlywUbYIWZZhy%22%3B%7D; PHPSESSID=qi9qmn1tsl97qmh78if02pe816'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52307'
+    'REDIRECT_URL' => '/default'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/default'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464635176.252
+    'REQUEST_TIME' => 1464635176
+    'argv' => []
+    'argc' => 0
+]
+2016-05-30 22:06:23 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii/vendor\bower/jquery/dist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(179): yii\web\AssetManager->publish('C:\\OpenServer\\d...', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', 1)
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 C:\OpenServer\domains\yii\frontend\views\layouts\bootstrap.php(2): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\modules\main\controllers\DefaultController))
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\r\n<div class=""...')
+#12 C:\OpenServer\domains\yii\frontend\modules\main\controllers\DefaultController.php(20): yii\base\Controller->render('index')
+#13 [internal function]: app\modules\main\controllers\DefaultController->actionIndex()
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main', Array)
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2016-05-30 22:06:23 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DX9USIdpbeUyt63J6qbNlywUbYIWZZhy\";}'
+    'PHPSESSID' => 'qi9qmn1tsl97qmh78if02pe816'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => '_csrf=102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DX9USIdpbeUyt63J6qbNlywUbYIWZZhy%22%3B%7D; PHPSESSID=qi9qmn1tsl97qmh78if02pe816'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52324'
+    'REDIRECT_URL' => '/main'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464635183.593
+    'REQUEST_TIME' => 1464635183
+    'argv' => []
+    'argc' => 0
+]
+2016-05-30 22:09:42 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii/vendor\bower/jquery/dist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(179): yii\web\AssetManager->publish('C:\\OpenServer\\d...', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', 1)
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 C:\OpenServer\domains\yii\frontend\views\layouts\bootstrap.php(2): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\modules\main\controllers\DefaultController))
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\r\n<div class=""...')
+#12 C:\OpenServer\domains\yii\frontend\modules\main\controllers\DefaultController.php(20): yii\base\Controller->render('index')
+#13 [internal function]: app\modules\main\controllers\DefaultController->actionIndex()
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main', Array)
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2016-05-30 22:09:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DX9USIdpbeUyt63J6qbNlywUbYIWZZhy\";}'
+    'PHPSESSID' => 'qi9qmn1tsl97qmh78if02pe816'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => '_csrf=102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DX9USIdpbeUyt63J6qbNlywUbYIWZZhy%22%3B%7D; PHPSESSID=qi9qmn1tsl97qmh78if02pe816'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52859'
+    'REDIRECT_URL' => '/main'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464635382.294
+    'REQUEST_TIME' => 1464635382
+    'argv' => []
+    'argc' => 0
+]
+2016-05-30 22:09:45 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii/vendor\bower/jquery/dist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(179): yii\web\AssetManager->publish('C:\\OpenServer\\d...', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 C:\OpenServer\domains\yii\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(frontend\controllers\SiteController))
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#12 C:\OpenServer\domains\yii\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2016-05-30 22:09:45 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DX9USIdpbeUyt63J6qbNlywUbYIWZZhy\";}'
+    'PHPSESSID' => 'qi9qmn1tsl97qmh78if02pe816'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => '_csrf=102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DX9USIdpbeUyt63J6qbNlywUbYIWZZhy%22%3B%7D; PHPSESSID=qi9qmn1tsl97qmh78if02pe816'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52862'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464635385.293
+    'REQUEST_TIME' => 1464635385
+    'argv' => []
+    'argc' => 0
+]
+2016-05-30 22:15:45 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii/vendor\bower/jquery/dist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(179): yii\web\AssetManager->publish('C:\\OpenServer\\d...', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 C:\OpenServer\domains\yii\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(frontend\controllers\SiteController))
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#12 C:\OpenServer\domains\yii\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2016-05-30 22:15:45 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DX9USIdpbeUyt63J6qbNlywUbYIWZZhy\";}'
+    'PHPSESSID' => 'qi9qmn1tsl97qmh78if02pe816'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => '_csrf=102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DX9USIdpbeUyt63J6qbNlywUbYIWZZhy%22%3B%7D; PHPSESSID=qi9qmn1tsl97qmh78if02pe816'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53827'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464635745.118
+    'REQUEST_TIME' => 1464635745
+    'argv' => []
+    'argc' => 0
+]
+2016-05-30 22:16:29 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\OpenServer\domains\yii/vendor\bower/jquery/dist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(179): yii\web\AssetManager->publish('C:\\OpenServer\\d...', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 C:\OpenServer\domains\yii\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(frontend\controllers\SiteController))
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#12 C:\OpenServer\domains\yii\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2016-05-30 22:16:29 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DX9USIdpbeUyt63J6qbNlywUbYIWZZhy\";}'
+    'PHPSESSID' => 'qi9qmn1tsl97qmh78if02pe816'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => '_csrf=102a066e748a9d62495fb16b58b8e631bc435177b0113ca5664253111755d3ada%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DX9USIdpbeUyt63J6qbNlywUbYIWZZhy%22%3B%7D; PHPSESSID=qi9qmn1tsl97qmh78if02pe816'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53965'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464635789.884
+    'REQUEST_TIME' => 1464635789
+    'argv' => []
+    'argc' => 0
+]
+2016-05-30 23:24:03 [127.0.0.1][-][qi9qmn1tsl97qmh78if02pe816][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "main/images/properties/1.jpg".' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/images/pro...', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-30 23:24:03 [127.0.0.1][-][qi9qmn1tsl97qmh78if02pe816][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qi9qmn1tsl97qmh78if02pe816'
+    '_csrf' => 'ae84167fcdbbd8c07e2a01c7014f0fa2eb753ec448a27850b20e9ba6f25f796da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SWCDdslAnmTJ938l5IkH1ijOzbizzySB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'kunozy'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii/main/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=qi9qmn1tsl97qmh78if02pe816; _csrf=ae84167fcdbbd8c07e2a01c7014f0fa2eb753ec448a27850b20e9ba6f25f796da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SWCDdslAnmTJ938l5IkH1ijOzbizzySB%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '65121'
+    'REDIRECT_URL' => '/main/images/properties/1.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/images/properties/1.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464639843.096
+    'REQUEST_TIME' => 1464639843
+    'argv' => []
+    'argc' => 0
+]
+2016-05-30 23:24:03 [127.0.0.1][-][qi9qmn1tsl97qmh78if02pe816][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "main/images/properties/4.jpg".' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/images/pro...', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-30 23:24:03 [127.0.0.1][-][qi9qmn1tsl97qmh78if02pe816][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qi9qmn1tsl97qmh78if02pe816'
+    '_csrf' => 'ae84167fcdbbd8c07e2a01c7014f0fa2eb753ec448a27850b20e9ba6f25f796da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SWCDdslAnmTJ938l5IkH1ijOzbizzySB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'kunozy'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii/main/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=qi9qmn1tsl97qmh78if02pe816; _csrf=ae84167fcdbbd8c07e2a01c7014f0fa2eb753ec448a27850b20e9ba6f25f796da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SWCDdslAnmTJ938l5IkH1ijOzbizzySB%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '65117'
+    'REDIRECT_URL' => '/main/images/properties/4.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/images/properties/4.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464639843.194
+    'REQUEST_TIME' => 1464639843
+    'argv' => []
+    'argc' => 0
+]
+2016-05-30 23:24:03 [127.0.0.1][-][qi9qmn1tsl97qmh78if02pe816][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "main/images/properties/2.jpg".' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/images/pro...', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-30 23:24:03 [127.0.0.1][-][qi9qmn1tsl97qmh78if02pe816][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qi9qmn1tsl97qmh78if02pe816'
+    '_csrf' => 'ae84167fcdbbd8c07e2a01c7014f0fa2eb753ec448a27850b20e9ba6f25f796da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SWCDdslAnmTJ938l5IkH1ijOzbizzySB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'kunozy'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii/main/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=qi9qmn1tsl97qmh78if02pe816; _csrf=ae84167fcdbbd8c07e2a01c7014f0fa2eb753ec448a27850b20e9ba6f25f796da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SWCDdslAnmTJ938l5IkH1ijOzbizzySB%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '65118'
+    'REDIRECT_URL' => '/main/images/properties/2.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/images/properties/2.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464639843.19
+    'REQUEST_TIME' => 1464639843
+    'argv' => []
+    'argc' => 0
+]
+2016-05-30 23:24:03 [127.0.0.1][-][qi9qmn1tsl97qmh78if02pe816][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "main/images/properties/3.jpg".' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/images/pro...', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-30 23:24:03 [127.0.0.1][-][qi9qmn1tsl97qmh78if02pe816][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qi9qmn1tsl97qmh78if02pe816'
+    '_csrf' => 'ae84167fcdbbd8c07e2a01c7014f0fa2eb753ec448a27850b20e9ba6f25f796da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SWCDdslAnmTJ938l5IkH1ijOzbizzySB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'kunozy'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii/main/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=qi9qmn1tsl97qmh78if02pe816; _csrf=ae84167fcdbbd8c07e2a01c7014f0fa2eb753ec448a27850b20e9ba6f25f796da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SWCDdslAnmTJ938l5IkH1ijOzbizzySB%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.6\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '65120'
+    'REDIRECT_URL' => '/main/images/properties/3.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/images/properties/3.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464639843.19
+    'REQUEST_TIME' => 1464639843
+    'argv' => []
+    'argc' => 0
+]

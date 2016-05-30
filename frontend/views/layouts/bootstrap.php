@@ -20,6 +20,7 @@ use yii\bootstrap\Nav;
 
 <body>
 <?php $this->beginBody(); ?>
+
 <?php $this->render('//common/head'); ?>
 
 <?php echo $content; ?>
