@@ -16,13 +16,13 @@ class MainAsset extends AssetBundle
         'source/style.css',
         'source/owl-carousel/owl.carousel.css',
         'source/owl-carousel/owl.theme.css',
-        'source/sliteslider/css/style.css',
-        'source/sliteslider/css/custom.css'
+        'source/slitslider/css/style.css',
+        'source/slitslider/css/custom.css'
     ];
     public $js = [
         'source/script.js',
         'source/owl-carousel/owl.carousel.js',
-        'source/sliteslider/js/modernizr.custom.79639.js',
+        'source/slitslider/js/modernizr.custom.79639.js',
         'source/slitslider/js/jquery.ba-cond.min.js',
         'source/slitslider/js/jquery.slitslider.js',
         'source/js/google_analytics_auto.js'

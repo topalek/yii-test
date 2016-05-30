@@ -11,6 +11,11 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    'modules' => [
+        'main' => [
+            'class' => 'app\modules\main\Module',
+        ],
+    ],
     'components' => [
 
             'mail' => [
@@ -27,7 +32,11 @@ return [
                     'password'   => '',
                 ],
             ],
-        
+
+        'common'=>[
+            'class'=> 'frontend\components\Common',
+        ],
+
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
