@@ -40,7 +40,7 @@
 
     <!-- Header Starts -->
     <div class="header">
-        <a href="index.php"><img src="images/logo.png" alt="Realestate"></a>
+        <a href="index.php"><img src="../../images/logo.png" alt="Realestate"></a>
 
         <ul class="pull-right">
             <li><a href="buysalerent.php">Buy</a></li>

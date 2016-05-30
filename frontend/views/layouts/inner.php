@@ -22,15 +22,14 @@ use yii\bootstrap\Nav;
 <?php $this->beginBody(); ?>
 
 
-<div class="container">
+<!-- Header Starts -->
 
-    <!-- Header Starts -->
+    <?php echo $this->render('//common/head'); ?>
 
-    <?php $this->render('//common/head'); ?>
+<!-- #Header Starts -->
 
-    <!-- #Header Starts -->
 
-</div><!-- banner -->
+<!-- banner -->
 <div class="inside-banner">
     <div class="container">
         <span class="pull-right"><a href="#">Home</a> / Buy</span>

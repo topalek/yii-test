@@ -13,6 +13,8 @@ $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/../config/main.php'),
     require(__DIR__ . '/../config/main-local.php')
 );
-
+$service = new \yii\di\ServiceLocator();
+$service->set('cache',"yii\caching\FileCache");
 $application = new yii\web\Application($config);
+$application->set('locator',$service);
 $application->run();
