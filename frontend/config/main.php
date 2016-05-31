@@ -18,20 +18,22 @@ return [
     ],
     'components' => [
 
-            'mail' => [
-                'class'            => 'zyx\phpmailer\Mailer',
-                'viewPath'         => '@common/mail',
-                'useFileTransport' => false,
-                'config'           => [
-                    'mailer'     => 'smtp',
-                    'host'       => 'smtp.yandex.ru',
-                    'port'       => '465',
-                    'smtpsecure' => 'ssl',
-                    'smtpauth'   => true,
-                    'username'   => '',
-                    'password'   => '',
-                ],
+        'mail' => [
+            'class'            => 'zyx/zyx-phpmailer/Mailer',
+            'viewPath'         => '@common/mail',
+            'useFileTransport' => false,
+            'config'           => [
+                'mailer'     => 'smtp',
+                'host'       => 'smtp.yandex.ru',
+                'port'       => '465',
+                'smtpsecure' => 'ssl',
+                'smtpauth'   => true,
+                'username'   => 'topalek.v@yandex.ru',
+                'password'   => 'vfbkhe159753',
+                'ishtml'   => true,
+                'charset'   => 'UTF-8',
             ],
+        ],
 
         'common'=>[
             'class'=> 'frontend\components\Common',

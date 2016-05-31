@@ -6,6 +6,7 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+       
 
         'urlManager' => [
             'showScriptName' => false,  // Disable index.php

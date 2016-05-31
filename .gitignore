@@ -1,3 +1,4 @@
-vagrant/
-.git/
-frontend/runtime/
+vagrant/**
+.git/**
+frontend/runtime/**
+vendor/**

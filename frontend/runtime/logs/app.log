@@ -754,3 +754,1436 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2016-05-31 11:01:55 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\bootstrap\ActiveField::type' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Component->__set('type', 'password')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\bootstrap\ActiveField), Array)
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2-bootstrap\ActiveField.php(155): yii\base\Object->__construct(Array)
+#3 [internal function]: yii\bootstrap\ActiveField->__construct(Array)
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('yii\\bootstrap\\A...', Array, Array)
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\bootstrap\\A...', Array, Array)
+#7 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveForm.php(293): yii\BaseYii::createObject(Array)
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2-bootstrap\ActiveForm.php(107): yii\widgets\ActiveForm->field(Object(frontend\models\SignupForm), 'password', Array)
+#9 C:\OpenServer\domains\yii\frontend\modules\main\views\main\register.php(7): yii\bootstrap\ActiveForm->field(Object(frontend\models\SignupForm), 'password', Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#12 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\modules\main\controllers\MainController))
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('register', Array, Object(app\modules\main\controllers\MainController))
+#14 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(22): yii\base\Controller->render('register', Array)
+#15 [internal function]: app\modules\main\controllers\MainController->actionRegister()
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#19 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/regis...', Array)
+#20 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#22 {main}
+2016-05-31 11:01:55 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '11241'
+    'REDIRECT_URL' => '/main/main/register'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464681715.277
+    'REQUEST_TIME' => 1464681715
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 11:02:33 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in C:\OpenServer\domains\yii\frontend\modules\main\views\main\register.php:7
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-05-31 11:02:33 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '11261'
+    'REDIRECT_URL' => '/main/main/register'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464681753.581
+    'REQUEST_TIME' => 1464681753
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 11:13:21 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php:600
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(600): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(757): yii\db\Schema->quoteValue('<span class="st...')
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\validators\UniqueValidator.php(112): yii\db\Query->exists()
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#12 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#13 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(19): yii\base\Model->validate()
+#14 [internal function]: app\modules\main\controllers\MainController->actionRegister()
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#19 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#21 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php:547
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(757): yii\db\Schema->quoteValue('<span class="st...')
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\validators\UniqueValidator.php(112): yii\db\Query->exists()
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#11 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(19): yii\base\Model->validate()
+#12 [internal function]: app\modules\main\controllers\MainController->actionRegister()
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#19 {main}
+Additional Information:
+
+2016-05-31 11:13:21 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'Z3A0REhZTzQTR2soGSADeQQaDB4nLzhAEBRyFDBsOGIJOW4MBRYQAQ=='
+    'SignupForm' => [
+        'username' => 'admin'
+        'email' => 'admin@ad.min'
+        'password' => '123'
+        'repassword' => '123'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii/main/main/register'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '11579'
+    'REDIRECT_URL' => '/main/main/register'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464682401.426
+    'REQUEST_TIME' => 1464682401
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 11:27:16 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php:600
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(600): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(757): yii\db\Schema->quoteValue('<span class="st...')
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\validators\UniqueValidator.php(112): yii\db\Query->exists()
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#12 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#13 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(25): yii\base\Model->validate()
+#14 [internal function]: app\modules\main\controllers\MainController->actionRegister()
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#19 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#21 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php:547
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Connection.php(757): yii\db\Schema->quoteValue('<span class="st...')
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\validators\UniqueValidator.php(112): yii\db\Query->exists()
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#11 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(25): yii\base\Model->validate()
+#12 [internal function]: app\modules\main\controllers\MainController->actionRegister()
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#19 {main}
+Additional Information:
+
+2016-05-31 11:27:16 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'Z3A0REhZTzQTR2soGSADeQQaDB4nLzhAEBRyFDBsOGIJOW4MBRYQAQ=='
+    'SignupForm' => [
+        'username' => 'admin'
+        'email' => 'admin@ad.min'
+        'password' => '123'
+        'repassword' => '123'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '194'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii/main/main/register'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '11887'
+    'REDIRECT_URL' => '/main/main/register'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464683236.003
+    'REQUEST_TIME' => 1464683236
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 12:00:56 [127.0.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class CaptchaAction does not exist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php:417
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->__construct('CaptchaAction')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(360): yii\di\Container->getDependencies('CaptchaAction')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('CaptchaAction', Array, Array)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('CaptchaAction', Array, Array)
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(222): yii\BaseYii::createObject(Array, Array)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(123): yii\base\Controller->createAction('captcha')
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('captcha', Array)
+#7 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/captc...', Array)
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#10 {main}
+2016-05-31 12:00:56 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '12705'
+    'REDIRECT_URL' => '/main/main/captcha'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/captcha'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464685256.088
+    'REQUEST_TIME' => 1464685256
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 12:26:42 [127.0.0.1][-][-][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\ContactForm::username' 
+
+in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(2068): yii\base\Component->__get('username')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\ContactForm), 'username')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\ContactForm), 'username', Array)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(362): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\ContactForm), 'username', Array)
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(190): yii\widgets\ActiveField->textInput()
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2-bootstrap\ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(162): yii\bootstrap\ActiveField->render()
+#7 C:\OpenServer\domains\yii\frontend\modules\main\views\main\contact.php(9): yii\widgets\ActiveField->__toString()
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\modules\main\controllers\MainController))
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('contact', Array, Object(app\modules\main\controllers\MainController))
+#12 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): yii\base\Controller->render('contact', Array)
+#13 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('contact', Array)
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/conta...', Array)
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#20 {main}' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(164): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\OpenServer\domains\yii\frontend\modules\main\views\main\contact.php(9): yii\widgets\ActiveField->__toString()
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\modules\main\controllers\MainController))
+#7 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(app\modules\main\controllers\MainController))
+#8 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#12 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#16 {main}
+    in C:\OpenServer\domains\yii\frontend\modules\main\views\main\contact.php:9
+    in C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php:47
+2016-05-31 12:26:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '13292'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464686802.586
+    'REQUEST_TIME' => 1464686802
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 12:28:42 [127.0.0.1][-][-][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\ContactForm::subj' 
+
+in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(2068): yii\base\Component->__get('subj')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\ContactForm), 'subj')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\ContactForm), 'subj', Array)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(362): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\ContactForm), 'subj', Array)
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(190): yii\widgets\ActiveField->textInput()
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2-bootstrap\ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(162): yii\bootstrap\ActiveField->render()
+#7 C:\OpenServer\domains\yii\frontend\modules\main\views\main\contact.php(11): yii\widgets\ActiveField->__toString()
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\modules\main\controllers\MainController))
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('contact', Array, Object(app\modules\main\controllers\MainController))
+#12 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): yii\base\Controller->render('contact', Array)
+#13 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('contact', Array)
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/conta...', Array)
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#20 {main}' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(164): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\OpenServer\domains\yii\frontend\modules\main\views\main\contact.php(11): yii\widgets\ActiveField->__toString()
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\modules\main\controllers\MainController))
+#7 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(app\modules\main\controllers\MainController))
+#8 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#12 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#16 {main}
+    in C:\OpenServer\domains\yii\frontend\modules\main\views\main\contact.php:11
+    in C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php:47
+2016-05-31 12:28:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '13337'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464686922.343
+    'REQUEST_TIME' => 1464686922
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 12:29:23 [127.0.0.1][-][-][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\ContactForm::subj' 
+
+in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(2068): yii\base\Component->__get('subj')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\ContactForm), 'subj')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\ContactForm), 'subj', Array)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(362): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\ContactForm), 'subj', Array)
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(190): yii\widgets\ActiveField->textInput()
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2-bootstrap\ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(162): yii\bootstrap\ActiveField->render()
+#7 C:\OpenServer\domains\yii\frontend\modules\main\views\main\contact.php(11): yii\widgets\ActiveField->__toString()
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\modules\main\controllers\MainController))
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('contact', Array, Object(app\modules\main\controllers\MainController))
+#12 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): yii\base\Controller->render('contact', Array)
+#13 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('contact', Array)
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/conta...', Array)
+#18 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#20 {main}' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(164): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\OpenServer\domains\yii\frontend\modules\main\views\main\contact.php(11): yii\widgets\ActiveField->__toString()
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\modules\main\controllers\MainController))
+#7 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(app\modules\main\controllers\MainController))
+#8 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#12 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#16 {main}
+    in C:\OpenServer\domains\yii\frontend\modules\main\views\main\contact.php:11
+    in C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php:47
+2016-05-31 12:29:23 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '13352'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464686963.711
+    'REQUEST_TIME' => 1464686963
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 12:29:59 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\ContactForm::verify' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(2068): yii\base\Component->__get('verify')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\ContactForm), 'verify')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\helpers\BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\ContactForm), 'verify', Array)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\captcha\Captcha.php(108): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\ContactForm), 'verify', Array)
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Widget.php(98): yii\captcha\Captcha->run()
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\widgets\ActiveField.php(673): yii\base\Widget::widget(Array)
+#6 C:\OpenServer\domains\yii\frontend\modules\main\views\main\contact.php(16): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#7 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\modules\main\controllers\MainController))
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('contact', Array, Object(app\modules\main\controllers\MainController))
+#11 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): yii\base\Controller->render('contact', Array)
+#12 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#15 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('contact', Array)
+#16 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/conta...', Array)
+#17 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#19 {main}
+2016-05-31 12:29:59 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '13365'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464686999.056
+    'REQUEST_TIME' => 1464686999
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 12:40:31 [127.0.0.1][-][10vr8j5sf4a809dhaoolf19l63][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: main/main/test' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('test', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/test', Array)
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#2 {main}
+2016-05-31 12:40:31 [127.0.0.1][-][10vr8j5sf4a809dhaoolf19l63][info][application] $_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'iijeeu'
+    '__captcha/site/captchacount' => 1
+    '__captcha/main/main/captcha' => 'loxuapl'
+    '__captcha/main/main/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '13645'
+    'REDIRECT_URL' => '/main/main/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464687631.189
+    'REQUEST_TIME' => 1464687631
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 12:41:10 [127.0.0.1][-][10vr8j5sf4a809dhaoolf19l63][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: main/main/test' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('test', Array)
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/test', Array)
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#2 {main}
+2016-05-31 12:41:10 [127.0.0.1][-][10vr8j5sf4a809dhaoolf19l63][info][application] $_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'iijeeu'
+    '__captcha/site/captchacount' => 1
+    '__captcha/main/main/captcha' => 'loxuapl'
+    '__captcha/main/main/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '13669'
+    'REDIRECT_URL' => '/main/main/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464687670.898
+    'REQUEST_TIME' => 1464687670
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 12:44:40 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: C:\OpenServer\domains\yii/frontend/actions/viewsindex.php' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(app\modules\main\controllers\MainController))
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('@frontend/actio...', Array, Object(app\modules\main\controllers\MainController))
+#2 C:\OpenServer\domains\yii\frontend\actions\TestAction.php(13): yii\base\Controller->render('@frontend/actio...')
+#3 [internal function]: frontend\actions\TestAction->run()
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#6 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('test', Array)
+#7 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/test', Array)
+#8 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#10 {main}
+2016-05-31 12:44:40 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '13745'
+    'REDIRECT_URL' => '/main/main/test'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/test'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464687880.226
+    'REQUEST_TIME' => 1464687880
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 13:19:37 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '{'' in C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php:44
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-05-31 13:19:37 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'UFNSRWFEeEgkZA0pMD00BTM5ah8OMg88JzcUFRlxDx4.GggNLAsnfQ=='
+    'ContactForm' => [
+        'name' => 'Topalek'
+        'email' => '11@111.11'
+        'subject' => 'q'
+        'body' => 'qwe'
+        'verifyCode' => 'josife'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '219'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii/main/main/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '14507'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464689977.885
+    'REQUEST_TIME' => 1464689977
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 14:15:34 [127.0.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class zyx\phpmailer\Mailer does not exist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php:417
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->__construct('zyx\\phpmailer\\M...')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(360): yii\di\Container->getDependencies('zyx\\phpmailer\\M...')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('zyx\\phpmailer\\M...', Array, Array)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('zyx\\phpmailer\\M...', Array, Array)
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\ServiceLocator.php(71): yii\di\ServiceLocator->get('mail')
+#6 C:\OpenServer\domains\yii\frontend\components\Common.php(11): yii\di\ServiceLocator->__get('mail')
+#7 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): frontend\components\Common->sendMail('q', 'qwe')
+#8 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('contact', Array)
+#12 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/conta...', Array)
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#15 {main}
+2016-05-31 14:15:34 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'c0g5aFNiRFMHf2YEAhsIHhAiATI8FDMnBCx/OCtXMwUdAWMgHi0bZg=='
+    'ContactForm' => [
+        'name' => 'Topalek'
+        'email' => '11@111.11'
+        'subject' => 'q'
+        'body' => 'qwe'
+        'verifyCode' => 'buthrej'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '222'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii/main/main/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '16208'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464693334.598
+    'REQUEST_TIME' => 1464693334
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 14:30:33 [127.0.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class zyx\zyx-phpmailer\Mailer does not exist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php:417
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->__construct('zyx\\zyx-phpmail...')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(360): yii\di\Container->getDependencies('zyx\\zyx-phpmail...')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('zyx\\zyx-phpmail...', Array, Array)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('zyx\\zyx-phpmail...', Array, Array)
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\ServiceLocator.php(71): yii\di\ServiceLocator->get('mail')
+#6 C:\OpenServer\domains\yii\frontend\components\Common.php(11): yii\di\ServiceLocator->__get('mail')
+#7 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): frontend\components\Common->sendMail('q', '123')
+#8 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('contact', Array)
+#12 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/conta...', Array)
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#15 {main}
+2016-05-31 14:30:33 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'Und1UHM4clQmQCo8IkE.GTEdTQocTgUgJRMzAAsNBQI8Pi8YPnctYQ=='
+    'ContactForm' => [
+        'name' => 'Topalek'
+        'email' => '11@111.11'
+        'subject' => 'q'
+        'body' => '123'
+        'verifyCode' => 'buthrej'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '220'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii/main/main/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '16600'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464694233.292
+    'REQUEST_TIME' => 1464694233
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 14:33:46 [127.0.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class @common/../zyx/zyx-phpmailer/Mailer does not exist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php:417
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->__construct('@common/../zyx/...')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(360): yii\di\Container->getDependencies('@common/../zyx/...')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('@common/../zyx/...', Array, Array)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('@common/../zyx/...', Array, Array)
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\ServiceLocator.php(71): yii\di\ServiceLocator->get('mail')
+#6 C:\OpenServer\domains\yii\frontend\components\Common.php(11): yii\di\ServiceLocator->__get('mail')
+#7 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): frontend\components\Common->sendMail('q', '123')
+#8 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('contact', Array)
+#12 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/conta...', Array)
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#15 {main}
+2016-05-31 14:33:46 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'Und1UHM4clQmQCo8IkE.GTEdTQocTgUgJRMzAAsNBQI8Pi8YPnctYQ=='
+    'ContactForm' => [
+        'name' => 'Topalek'
+        'email' => '11@111.11'
+        'subject' => 'q'
+        'body' => '123'
+        'verifyCode' => 'buthrej'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '220'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii/main/main/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '16683'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464694426.418
+    'REQUEST_TIME' => 1464694426
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 14:34:02 [127.0.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class ../../zyx/zyx-phpmailer/Mailer does not exist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php:417
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->__construct('../../zyx/zyx-p...')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(360): yii\di\Container->getDependencies('../../zyx/zyx-p...')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('../../zyx/zyx-p...', Array, Array)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('../../zyx/zyx-p...', Array, Array)
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\ServiceLocator.php(71): yii\di\ServiceLocator->get('mail')
+#6 C:\OpenServer\domains\yii\frontend\components\Common.php(11): yii\di\ServiceLocator->__get('mail')
+#7 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): frontend\components\Common->sendMail('q', '123')
+#8 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('contact', Array)
+#12 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/conta...', Array)
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#15 {main}
+2016-05-31 14:34:02 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'Und1UHM4clQmQCo8IkE.GTEdTQocTgUgJRMzAAsNBQI8Pi8YPnctYQ=='
+    'ContactForm' => [
+        'name' => 'Topalek'
+        'email' => '11@111.11'
+        'subject' => 'q'
+        'body' => '123'
+        'verifyCode' => 'buthrej'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '220'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii/main/main/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '16685'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464694442.502
+    'REQUEST_TIME' => 1464694442
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 14:34:18 [127.0.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class zyx/zyx-phpmailer/Mailer does not exist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php:417
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->__construct('zyx/zyx-phpmail...')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(360): yii\di\Container->getDependencies('zyx/zyx-phpmail...')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('zyx/zyx-phpmail...', Array, Array)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('zyx/zyx-phpmail...', Array, Array)
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\ServiceLocator.php(71): yii\di\ServiceLocator->get('mail')
+#6 C:\OpenServer\domains\yii\frontend\components\Common.php(11): yii\di\ServiceLocator->__get('mail')
+#7 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): frontend\components\Common->sendMail('q', '123')
+#8 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('contact', Array)
+#12 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/conta...', Array)
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#15 {main}
+2016-05-31 14:34:18 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'Und1UHM4clQmQCo8IkE.GTEdTQocTgUgJRMzAAsNBQI8Pi8YPnctYQ=='
+    'ContactForm' => [
+        'name' => 'Topalek'
+        'email' => '11@111.11'
+        'subject' => 'q'
+        'body' => '123'
+        'verifyCode' => 'buthrej'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '220'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii/main/main/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '16702'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464694458.585
+    'REQUEST_TIME' => 1464694458
+    'argv' => []
+    'argc' => 0
+]
+2016-05-31 16:44:21 [127.0.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class zyx/zyx-phpmailer/Mailer does not exist' in C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php:417
+Stack trace:
+#0 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->__construct('zyx/zyx-phpmail...')
+#1 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(360): yii\di\Container->getDependencies('zyx/zyx-phpmail...')
+#2 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('zyx/zyx-phpmail...', Array, Array)
+#3 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('zyx/zyx-phpmail...', Array, Array)
+#4 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#5 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\di\ServiceLocator.php(71): yii\di\ServiceLocator->get('mail')
+#6 C:\OpenServer\domains\yii\frontend\components\Common.php(11): yii\di\ServiceLocator->__get('mail')
+#7 C:\OpenServer\domains\yii\frontend\modules\main\controllers\MainController.php(47): frontend\components\Common->sendMail('q', '123')
+#8 [internal function]: app\modules\main\controllers\MainController->actionContact()
+#9 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('contact', Array)
+#12 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('main/main/conta...', Array)
+#13 C:\OpenServer\domains\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\OpenServer\domains\yii\frontend\web\index.php(24): yii\base\Application->run()
+#15 {main}
+2016-05-31 16:44:21 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'Und1UHM4clQmQCo8IkE.GTEdTQocTgUgJRMzAAsNBQI8Pi8YPnctYQ=='
+    'ContactForm' => [
+        'name' => 'Topalek'
+        'email' => '11@111.11'
+        'subject' => 'q'
+        'body' => '123'
+        'verifyCode' => 'buthrej'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '10vr8j5sf4a809dhaoolf19l63'
+    '_csrf' => '34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '220'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii/main/main/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=10vr8j5sf4a809dhaoolf19l63; _csrf=34f511c4c3e6b223c57e0ef40a383c13f81022a5930d539382ee32d496474f98a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t7_lQyLMcj8ZovwtwdFPx5wVnIZHMO_5%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '20677'
+    'REDIRECT_URL' => '/main/main/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/main/contact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464702261.279
+    'REQUEST_TIME' => 1464702261
+    'argv' => []
+    'argc' => 0
+]
